@@ -1,0 +1,56 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>  
+</head>
+<html>
+    <form action="/admin/chk_admin_login" method="post">
+    <body style="margin: 0; padding: 0; width: 100%;">
+  <div style="background: #FAF7F3; display: flex; font-family: Barlow Condensed;justify-content: center; align-items: 
+  center; height: 100vh;">
+  <img src="/images/loginside.png"  style="width:400px; position: relative;left: 70px; border: 0.5px  #ccc; box-shadow: 90px 90px 90px white; border-radius: 30px; ">
+    <div class="loginbox" style="width: 45%; background: #f7f1e3; height: auto; border-radius: 8px; padding: 40px;position: relative; left: 80px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.45);">
+        
+
+<h1 style="text-align: center;">Admin Login</h1>
+        <div class="row" style="margin-top: 25px;">
+<div class="col-12">
+    <label style="font-size: 20px;">Emailid/Mobile No.</label>
+    <input type="text" name="emailid" class="form-control" required  placeholder="Emailid/Mobile Number" style="border-color: #8395a7; height: 40px; margin-top: 5px; width: 90%;">
+
+</div>
+    </div>
+    
+        <div class="row" style="margin-top: 10px;">
+<div class="col-12">
+    <label style="font-size: 20px;">Password</label>
+    <input type="password" name="password" class="form-control" required  placeholder="Password" style="border-color: #8395a7; height: 40px; margin-top: 5px; width: 90%;">
+
+</div>
+    </div>
+    <div class="row" style="margin-top: 23px;">
+        <div class="col-12" style="display: flex; justify-content: center;">
+            <button type="submit" style="width: 38%;" class="btn btn-primary">Login</button>
+        </div>
+
+    </div>
+
+     <div class="row" style="margin-top: 23px;">
+        <div class="col-12" style="display: flex; justify-content: center;">
+        <%=message %>
+        </div>
+
+    </div>
+
+  </div>
+  </div>
+    </body>
+    </form>
+</html>
